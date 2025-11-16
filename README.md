@@ -1,6 +1,7 @@
 # InstaFaceReadX - Gamified Open Algorithm Social Media 🎮✨
 
-**[Working Demo](https://kylemath/github.io/InstaFaceReadX/)**
+**[Working Demo](https://kylemath.github.io/InstaFaceReadX/)**
+
 The world's first **gamified, youth-focused social media platform** that combines the best features of Instagram, Facebook, YouTube, Twitter, Reddit, TikTok, and Snapchat while giving users complete control over their algorithms through an engaging game-like experience designed specifically for Gen Z and Gen Alpha.
 
 ## 🎮 Revolutionary Features
