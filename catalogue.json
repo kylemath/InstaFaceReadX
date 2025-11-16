@@ -1,0 +1,11 @@
+{
+  "id": "instaFaceReadX",
+  "title": "InstaFaceReadX",
+  "oneLiner": "The world's first **gamified, youth-focused social media platform** that combines the best features of Instagram, Facebook, YouTube, Twitter, Reddit, TikTok, and Snapchat while giving users complete control over their algorithms through an engaging game-like experience designed specifically for Gen Z and Gen Alpha",
+  "demoUrl": "https://github.com/kylemath/InstaFaceReadX",
+  "screenshot": "https://raw.githubusercontent.com/kylemath/InstaFaceReadX/main/screenshot.png",
+  "kind": "project",
+  "categories": ["socialMedia", "webpage", "demo"],
+  "tags": ["socialMedia", "webpage", "demo"],
+  "status": "published"
+}
