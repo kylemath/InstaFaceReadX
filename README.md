@@ -1,6 +1,7 @@
 # InstaFaceReadX - Gamified Open Algorithm Social Media 🎮✨
 
 **[Working Demo](https://kylemath.github.io/InstaFaceReadX/)**
+
 ![Screenshot](screenshot.png)
 
 The world's first **gamified, youth-focused social media platform** that combines the best features of Instagram, Facebook, YouTube, Twitter, Reddit, TikTok, and Snapchat while giving users complete control over their algorithms through an engaging game-like experience designed specifically for Gen Z and Gen Alpha.
@@ -182,11 +183,63 @@ npm run dev
 # Build for production
 npm run build
 
+# Build for GitHub Pages (outputs to /docs folder)
+npm run build:gh-pages
+
 # Preview production build
 npm run preview
 
 # Run linting
 npm run lint
+```
+
+## 🌐 GitHub Pages Deployment
+
+This project is configured to deploy as a static site on GitHub Pages. The app uses mocked data, so it runs completely client-side without requiring a backend server.
+
+### Deploying to GitHub Pages
+
+1. **Build the static site:**
+   ```bash
+   npm run build:gh-pages
+   ```
+   This will create a `docs` folder with all the static files needed for GitHub Pages.
+
+2. **Commit and push the docs folder:**
+   ```bash
+   git add docs/
+   git commit -m "Deploy to GitHub Pages"
+   git push
+   ```
+
+3. **Configure GitHub Pages:**
+   - Go to your repository settings on GitHub
+   - Navigate to "Pages" in the left sidebar
+   - Under "Source", select "Deploy from a branch"
+   - Choose the `main` (or `master`) branch
+   - Select the `/docs` folder
+   - Click "Save"
+
+4. **Access your site:**
+   Your site will be available at: `https://<your-username>.github.io/InstaFaceReadX/`
+
+### Important Notes
+
+- The build automatically sets the base path to `/InstaFaceReadX/` for GitHub Pages
+- A `.nojekyll` file is created in the `docs` folder to prevent Jekyll processing
+- All assets (images, videos) are external URLs (Unsplash, sample videos) and will work without any server
+- The app is fully functional as a static demo - all data is mocked client-side
+
+### Local Testing
+
+To test the GitHub Pages build locally:
+```bash
+npm run build:gh-pages
+# Then serve the docs folder with any static file server
+# For example, using Python:
+cd docs && python -m http.server 8000
+# Or using Node.js http-server:
+npx http-server docs -p 8000
 ```
 
 ## 🎮 How to Use
@@ -289,4 +342,5 @@ MIT License - Feel free to use this code for educational and commercial purposes
 <p align="center">
   <img src="screenshot.png" alt="Project screenshot" width="720" />
 </p>
+
 
